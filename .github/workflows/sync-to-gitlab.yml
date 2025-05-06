@@ -32,7 +32,7 @@ jobs:
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
-          curl --request POST https://gitlab.com/api/v4/projects/69613515/merge_requests \
+          curl --request POST https://gitlab.com/api/v4/projects/69614878/merge_requests \
           --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
           --form "source_branch=tmp-sync-branch" \
           --form "target_branch=developer" \
